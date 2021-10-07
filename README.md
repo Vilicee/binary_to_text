@@ -1,7 +1,8 @@
-# binary_to_decimal
-A very simple binary to decimal translator. 
+# binary_to_text
+A very simple binary to text translator. 
 
-This program will help you if you encounter someone who only communicates by sending you files containing 8-bit binary numbers.
+This program will help you if you encounter someone who only communicates by sending you files containing 8-bit binary numbers. It interpretes the binary numbers to 
+base 10 numbers and then prints out the corresponding ASCII character.
 
 Makefile has just the following rules:
 - Make, this compiles the program
