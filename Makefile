@@ -1,6 +1,6 @@
 NAME = converter
 
-CFLAGS = gcc -Wall -Wextra -Werror
+CFLAGS = gcc -Wall -Wextra -Werror -fsanitize=address
 
 SRCS = main.c
 

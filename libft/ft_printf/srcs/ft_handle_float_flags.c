@@ -14,9 +14,6 @@
 
 void	ft_handle_float_flags(t_data *data)
 {
-	int	extra;
-
-	extra = 2;
 	if (data->plus == 1 && data->space == '1')
 		data->space = '0';
 	if (data->space == '1' && data->neg == 1)

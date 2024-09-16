@@ -41,7 +41,16 @@ static int	ft_check_input(char **characters)
 	while (characters[i])
 	{
 		if (ft_strlen(characters[i]) != 8)
+		{
+			if (ft_strlen(characters[i]) == 1)
+			{
+				return (0);
+			}
+			ft_putstr(characters[i]);
+			write(1, " ", 1);
+			ft_putnbr(ft_strlen(characters[i]));
 			return (-1);
+		}
 		while (characters[i][ii])
 		{
 			if (characters[i][ii] != '0' && characters[i][ii] != '1')
@@ -86,6 +95,7 @@ int main(int argc, char **argv)
 		close(fd);
 		write(1, "\n", 1);
 	}
-	ft_putstr("Usage: ./converter <file containing 8-bit binary numbers separated by spaces>\n");
+	else
+		ft_putstr("Usage: ./converter <file containing 8-bit binary numbers separated by spaces>\n");
 	return (0);
 }
